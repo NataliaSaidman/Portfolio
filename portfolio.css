@@ -6,6 +6,13 @@ body{
     margin: 0px;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 header nav{
     display:flex;
@@ -18,19 +25,17 @@ header nav{
     
 }
 
-ul{
-    list-style: none;
+header ul{
     display: flex;
     flex-direction: row;
     margin-right: 150px;
 }
 
-li{
+header li{
     padding: 20px;
 }
 
-a{
- text-decoration: none;
+header a{
  color: black;   
 }
 
@@ -202,9 +207,13 @@ cite{
 }
 
 
-.redes-sociales{
+.redes-sociales ul{
     display:flex;
     flex-direction: column;
+}
+
+.redes-sociales li{
+    padding: 10px;
 }
 
 .redes-sociales i{
@@ -229,6 +238,15 @@ footer{
     padding: 40px 20px 60px;
 }
 
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+
+footer li{
+    padding: 20px;
+}
+
 footer i {
     color: #833CEA;
     font-size: 20px;
@@ -247,5 +265,15 @@ footer a{
 }
 
 footer p{
-    padding-right: 100px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+
+.lista-interna{
+    margin-top: 20px;
+}
+
+.lista-externa{
+    margin-top: -20px;
 }
