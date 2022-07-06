@@ -30,6 +30,7 @@ header nav {
   text-align: center;
   width: 100%;
   background-color: #c0c097;
+  z-index: 1;
   position: fixed;
   height: 90px;
 }
@@ -41,15 +42,22 @@ header ul {
 }
 
 header li {
-  padding: 20px;
+  padding: 10px;
 }
 
 header a {
   color: black;
+  padding: 10px;
+  background-color: #c0c097;
 }
 
 header a:hover {
   color: #8d3948;
+}
+
+header a:focus {
+  border-radius: 30px;
+  box-shadow: 0 0 10px #8d3948;
 }
 
 #contact {
@@ -57,6 +65,15 @@ header a:hover {
   color: white;
   border-radius: 50px;
   padding: 10px 30px;
+}
+
+#contact:hover {
+  background-color: #30a37f;
+}
+
+#contact:focus {
+  background-color: #256d56;
+  box-shadow: 0 0 10px #256d56;
 }
 
 main {
@@ -111,6 +128,15 @@ main {
   color: white;
   border-radius: 50px;
   padding: 15px 30px;
+}
+
+.button:hover {
+  background-color: #d35b71;
+}
+
+.button:focus {
+  background-color: #8d3948;
+  box-shadow: 0 0 10px #8d3948;
 }
 
 .hero figure {
@@ -217,17 +243,16 @@ main {
     width: 100%;
     padding: 0;
   }
-
 }
 
-@media (max-width: 500px){
-  .header-knowledge{
+@media (max-width: 500px) {
+  .header-knowledge {
     width: 100%;
   }
-  .header-knowledge h2{
+  .header-knowledge h2 {
     font-size: 2.5rem;
   }
-  .header-knowledge p{
+  .header-knowledge p {
     width: auto;
   }
 }
@@ -336,8 +361,8 @@ main {
 }
 
 .projects figure:hover {
-  color: #6c63ff;
-  border: #6c63ff solid 1px;
+  color: #256d56;
+  border: #256d56 solid 1px;
 }
 
 .projects figcaption {
@@ -359,14 +384,14 @@ main {
   }
 }
 
-@media (max-width: 500px){
-  .header-project{
+@media (max-width: 500px) {
+  .header-project {
     width: 100%;
   }
-  .header-project h2{
+  .header-project h2 {
     font-size: 2.5rem;
   }
-  .header-project p{
+  .header-project p {
     width: auto;
   }
 }
@@ -389,7 +414,7 @@ main {
   flex-direction: row;
   background-color: white;
   width: 85%;
-  height: 650px;
+  height: 700px;
 }
 
 .contact {
@@ -417,38 +442,54 @@ main {
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding-left: 20px;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
 .social-networks li {
-  padding: 20px;
+  padding: 15px 0px;
 }
 
-.social-networks i {
-  font-size: 20px;
-  color: #ff6884;
-}
-
-.social-networks i:hover {
-  color: white;
-  width: 35px;
-  height: 35px;
-  background-color: #256d56;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-networks a {
+.social-link {
   color: rgba(0, 0, 0, 0.781);
   font-size: 18px;
   font-weight: 400;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-link i {
+  font-size: 18px;
+  color: #ff6884;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
 }
 
 .social-networks a:hover {
-  color: #256d56;
+  color: #d35b71;
+}
+
+.social-networks a:focus {
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 0 10px #256d56;
+}
+
+.social-networks i:hover {
+  background-color: #d35b71;
+  color: white;
+}
+
+form{
+  margin-top: 20px;
 }
 
 input[type],
@@ -475,6 +516,8 @@ textarea:focus {
   flex-direction: row;
 }
 
+
+
 #email {
   width: 420px;
 }
@@ -491,7 +534,7 @@ input[type="submit"] {
     background-color: white;
     flex-direction: column;
     height: auto;
-    padding:0;
+    padding: 0;
   }
   .box-contact {
     flex-direction: column;
@@ -502,24 +545,38 @@ input[type="submit"] {
   }
 
   .contact {
-    padding:0;
+    padding: 0;
     margin: 0;
     width: 90%;
     height: auto;
   }
 
-  .name{
-    flex-direction: column;
+  .social-networks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #email {
     width: 100%;
   }
 
-  textarea{
+  textarea {
     width: 100%;
   }
 }
+
+@media (max-width: 500px) {
+  .social-networks ul {
+    flex-direction: column;
+  }
+
+  .name {
+    flex-direction: column;
+  }
+}
+
+
 
 footer {
   background-color: #256d56;
@@ -572,7 +629,9 @@ footer li {
 }
 
 .internal-list a:hover {
-  color: #8d3948;
+  -webkit-text-stroke: #8d3948 1px;
+  color: white;
+  font-weight: 700;
 }
 
 footer p {
@@ -587,8 +646,8 @@ footer p {
   margin-top: -20px;
 }
 
-@media (max-width: 500px){
-  footer .internal-list{
-    display:none;
+@media (max-width: 500px) {
+  footer .internal-list {
+    display: none;
   }
 }

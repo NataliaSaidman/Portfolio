@@ -88,7 +88,10 @@
           <cite>Virginia Rometti</cite>
         </div>
         <div class="container">
-          <img src="image_processing20200119-22208-1tbdbxc.gif" />
+          <img
+            src="image_processing20200119-22208-1tbdbxc.gif"
+            alt="programadora"
+          />
         </div>
       </section>
 
@@ -157,29 +160,33 @@
             </div>
             <div class="social-networks">
               <ul>
-                <li>
-                  <i class="fa-brands fa-twitter"></i>
-                  <a href="https://twitter.com/saidman_natalia"
-                    >@saidman_natalia</a
-                  >
-                </li>
-                <li>
-                  <i class="fa-brands fa-github-alt"></i>
-                  <a href="https://github.com/NataliaSaidman">NataliaSaidman</a>
-                </li>
-                <li>
-                  <i class="fa-brands fa-linkedin-in"></i
-                  ><a
-                    href="https://www.linkedin.com/in/natalia-saidman-29879a242/"
-                    >Natalia Saidman</a
-                  >
-                </li>
-                <li>
-                  <i class="fa-solid fa-envelope"></i
-                  ><a href="mailto:licnataliasaidman@gmail.com"
-                    >licnataliasaidman@gmail.com</a
-                  >
-                </li>
+                <div>
+                  <li>
+                    <a href="https://twitter.com/saidman_natalia" class="social-link">
+                      <i class="fa-brands fa-twitter"></i>@saidman_natalia</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/NataliaSaidman" class="social-link"
+                      ><i class="fa-brands fa-github-alt"></i>NataliaSaidman</a
+                    >
+                  </li>
+                </div>
+                <div>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/natalia-saidman-29879a242/" class="social-link"
+                    >
+                      <i class="fa-brands fa-linkedin-in"></i>Natalia Saidman</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:licnataliasaidman@gmail.com" class="social-link"
+                      ><i class="fa-solid fa-envelope"></i
+                      >licnataliasaidman@gmail.com</a
+                    >
+                  </li>
+                </div>
               </ul>
             </div>
           </div>
@@ -187,35 +194,41 @@
             <h2>Escribime</h2>
             <form action="" method="GET">
               <div class="name">
-              <div>
-                <p>
-                Nombre<span>*</span></p>
-                <input type="text" name="nombre" placeholder="p. ej.: Natalia" />
+                <div>
+                  <p>Nombre<span>*</span></p>
+                  <input
+                    type="text"
+                    name="nombre"
+                    placeholder="p. ej.: Natalia"
+                  />
+                </div>
+                <div>
+                  <p>Apellido <span>*</span></p>
+                  <input
+                    type="text"
+                    name="apellido"
+                    placeholder="p. ej.: Saidman"
+                  />
+                  <p></p>
+                </div>
               </div>
-              <div>
+              <p>Email <span>*</span></p>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="p. ej.: licnataliasaidman@gmail.com"
+              />
+
+              <p>Mensaje <span>*</span></p>
+              <textarea
+                cols="50"
+                rows="10"
+                placeholder="Escriba mensaje aquí"
+              ></textarea>
               <p>
-                Apellido <span>*</span></p>
-                <input type="text" name="apellido" placeholder="p. ej.: Saidman" />
-              <p>
-              </div>
-              </div>
-                <p>Email <span>*</span></p>
-                <input     
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="p. ej.: licnataliasaidman@gmail.com"
-                />
-              
-              <p> Mensaje <span>*</span></p>
-                <textarea
-                  cols="50"
-                  rows="10"
-                  placeholder="Escriba mensaje aquí"
-                ></textarea>
-                <p>
-                  <input type="submit" value="Enviar" />
-                </p>
+                <input type="submit" value="Enviar" />
+              </p>
             </form>
           </div>
         </div>
