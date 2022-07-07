@@ -19,9 +19,6 @@ a {
   text-decoration: none;
 }
 
-i {
-  font-size: 100px;
-}
 
 header nav {
   display: flex;
@@ -98,7 +95,7 @@ main {
 }
 
 .presentation {
-  width: 90vh;
+  width: 70vh;
   padding-top: 100px;
 }
 
@@ -200,7 +197,7 @@ main {
   font-weight: lighter;
   line-height: 1.4em;
   font-size: 15px;
-  color: grey;
+  color: black;
   width: 400px;
 }
 
@@ -208,7 +205,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 100px;
@@ -225,6 +221,10 @@ main {
   align-items: center;
   flex-direction: column;
   margin: 10px;
+}
+
+.icon i{
+    font-size: 100px;
 }
 
 .icon:hover {
@@ -254,6 +254,26 @@ main {
   }
   .header-knowledge p {
     width: auto;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .icon i{
+      font-size: 50px;
+  }
+  
+  .icon:hover {
+    color: #8d3948;
+    border: #8d3948 solid 1px;
+  }
+  
+  .icon p {
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold;
   }
 }
 
@@ -331,7 +351,7 @@ main {
   font-weight: lighter;
   line-height: 1.4em;
   font-size: 15px;
-  color: grey;
+  color: black;
   width: 400px;
 }
 
