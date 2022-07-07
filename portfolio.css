@@ -95,8 +95,10 @@ main {
 }
 
 .presentation {
-  width: 70vh;
+  width: 80vh;
+  height: 300px;
   padding-top: 100px;
+  
 }
 
 .hero h2 {
@@ -110,7 +112,7 @@ main {
   margin-top: -3px;
   margin-bottom: 5px;
   color: #8d3948;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 900;
 }
 
