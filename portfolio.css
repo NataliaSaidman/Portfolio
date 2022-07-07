@@ -257,24 +257,21 @@ main {
     width: auto;
   }
 
+  .knowledge{
+    padding:0;
+  }
+
   .icon {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   
   .icon i{
-      font-size: 50px;
-  }
-  
-  .icon:hover {
-    color: #8d3948;
-    border: #8d3948 solid 1px;
+      font-size: 60px;
   }
   
   .icon p {
-    margin-top: 10px;
     font-size: 10px;
-    font-weight: bold;
   }
 }
 
@@ -415,6 +412,15 @@ main {
   .header-project p {
     width: auto;
   }
+  .projects figure {
+    width: 15vw;
+    height: 270px;
+  }
+  
+  .projects img {
+    width: 100%;
+  }
+
 }
 
 .section-contact {
