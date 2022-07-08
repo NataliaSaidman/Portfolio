@@ -26,7 +26,7 @@ header nav {
   align-items: center;
   text-align: center;
   width: 100%;
-  background-color: #c0c097;
+  background-color: #f1f1c8;
   z-index: 1;
   position: fixed;
   height: 90px;
@@ -45,16 +45,16 @@ header li {
 header a {
   color: black;
   padding: 10px;
-  background-color: #c0c097;
+  background-color: #f1f1c8;
 }
 
 header a:hover {
-  color: #e5e5ac;
+  color: #a4a476;
 }
 
 header a:focus {
   border-radius: 30px;
-  box-shadow: 0 0 10px #e5e5ac;
+  box-shadow: 0 0 10px #a4a476;
 }
 
 #contact {
@@ -283,6 +283,10 @@ main {
   }
 }
 
+#lamp{
+  display: none;
+}
+
 .gif {
   background-color: #8d3948;
   padding: 50px;
@@ -328,6 +332,17 @@ main {
 
   .gif .container img {
     display: none;
+  }
+
+  .phrase p{
+    margin-top: 20px;
+  }
+
+  #lamp {
+    display: contents;
+    font-size: 40px;
+    
+    
   }
 
 }
