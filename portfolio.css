@@ -213,7 +213,7 @@ main {
   padding-right: 100px;
 }
 
-.icon {
+.skill {
   width: 250px;
   height: 250px;
   border-radius: 5px;
@@ -226,16 +226,16 @@ main {
   margin: 10px;
 }
 
-.icon i{
+.skill i{
     font-size: 100px;
 }
 
-.icon:hover {
+.skill:hover {
   color: #8d3948;
   border: #b4485c solid 2px;
 }
 
-.icon p {
+.skill p {
   margin-top: 10px;
   font-size: 20px;
   font-weight: bold;
@@ -269,16 +269,16 @@ main {
     padding:0;
   }
 
-  .icon {
+  .skill {
     width: 120px;
     height: 120px;
   }
   
-  .icon i{
+  .skill i{
       font-size: 60px;
   }
   
-  .icon p {
+  .skill p {
     font-size: 10px;
   }
 }
@@ -289,6 +289,18 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.gif .phrase {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  color: white;
+  font-style: italic;
+  width: 300px;
+  font-size: 20px;
+  line-height: 1.4em;
 }
 
 .container {
@@ -303,29 +315,21 @@ main {
   box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 
-.gif .cite {
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-  color: white;
-  font-style: italic;
-  width: 300px;
-  font-size: 20px;
-  line-height: 1.4em;
-}
+
 
 @media (max-width: 1000px) {
   .gif {
     flex-direction: column;
   }
 
-  .gif .cite {
+  .gif .phrase {
     text-align: center;
   }
 
   .gif .container img {
     display: none;
   }
+
 }
 .section-project {
   display: flex;
