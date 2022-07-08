@@ -197,9 +197,10 @@ main {
 }
 
 .header-knowledge p {
+  text-align: center;
   line-height: 1.4em;
   color: black;
-  width: 450px;
+  width: 500px;
 }
 
 .knowledge {
@@ -373,7 +374,7 @@ main {
 .header-project p {
   line-height: 1.4em;
   color: black;
-  width: 450px;
+  width: 500px;
 }
 
 .projects {
