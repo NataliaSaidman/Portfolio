@@ -224,7 +224,7 @@ main {
   flex-direction: column;
   margin: 10px;
   transition-property: transform;
-  transition-duration: 2s ;
+  transition-duration: 1s ;
   transition-timing-function: ease-out;
 }
 
@@ -235,7 +235,7 @@ main {
 .skill:hover {
   color: #8d3948;
   border: #b4485c solid 2px;
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 .skill p {
@@ -418,6 +418,9 @@ main {
   height: 300px;
   margin: 12px;
   padding: 20px;
+  transition-property: transform;
+  transition-duration: 1s ;
+  transition-timing-function: ease-out;
 }
 
 .projects img {
@@ -428,6 +431,7 @@ main {
 .projects a:hover {
   color: #256d56;
   border: #369f7e solid 2px;
+  transform: scale(1.15);
 }
 
 .projects a:focus {
@@ -565,16 +569,16 @@ main {
 }
 
 .social-networks a:hover {
-  color: #d35b71;
+  color: #ff6884;
 }
 
 .social-networks a:focus {
   border-radius: 30px;
-  box-shadow: 0 0 10px #d35b71;
+  box-shadow: 0 0 10px #ff6884;
 }
 
-.social-networks i:hover {
-  background-color: #d35b71;
+.social-networks a:hover i {
+  background-color: #ff6884;
   color: white;
 }
 
@@ -584,11 +588,12 @@ form {
 
 input[type],
 textarea {
-  background-color: #f6f7fb;
+  background-color: rgb(242, 238, 238);
   border-radius: 20px;
-  border: 1px solid #f6f7fb;
+  border: 1px solid rgb(242, 238, 238);
   padding: 10px 15px;
   margin-left: 15px;
+
 }
 
 input:focus {
@@ -677,7 +682,7 @@ input[type="submit"]:focus {
 
   .social-networks ul {
     flex-direction: column;
-    margin-left: 35px;
+    margin-left: 20px;
   }
 
   .social-networks a {
@@ -688,9 +693,14 @@ input[type="submit"]:focus {
     flex-direction: column;
   }
 
+  form{
+    width: 95%;
+  }
+
   #text-name {
     width: 100%;
   }
+ 
 }
 
 @media (max-width: 300px) {
@@ -749,14 +759,21 @@ footer li {
   color: #256d56;
 }
 
-.link-red:hover {
+.link-red:hover{
   background-color: #256d56;
   border: white solid 1px;
+  
 }
 
-.link-red i:hover {
-  color: white;
+
+.link-red:hover i {
+  color:white;
 }
+
+.link-red:focus {
+  box-shadow: 0 0 40px white;
+}
+
 
 .internal-list a {
   color: white;
