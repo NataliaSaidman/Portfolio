@@ -418,9 +418,6 @@ main {
   height: 300px;
   margin: 12px;
   padding: 20px;
-  transition-property: transform;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
 }
 
 .projects img {
@@ -431,7 +428,7 @@ main {
 .projects a:hover {
   color: #256d56;
   border: #369f7e solid 1px;
-  transform: scale(1.15);
+
 }
 
 .projects a:focus {
