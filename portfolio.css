@@ -224,7 +224,7 @@ main {
   flex-direction: column;
   margin: 10px;
   transition-property: transform;
-  transition-duration: 1s ;
+  transition-duration: 1s;
   transition-timing-function: ease-out;
 }
 
@@ -234,7 +234,7 @@ main {
 
 .skill:hover {
   color: #8d3948;
-  border: #b4485c solid 2px;
+  border: #b4485c solid 1px;
   transform: scale(1.15);
 }
 
@@ -406,7 +406,6 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  width: 100%;
 }
 
 .projects a {
@@ -419,7 +418,7 @@ main {
   margin: 12px;
   padding: 20px;
   transition-property: transform;
-  transition-duration: 1s ;
+  transition-duration: 1s;
   transition-timing-function: ease-out;
 }
 
@@ -430,7 +429,7 @@ main {
 
 .projects a:hover {
   color: #256d56;
-  border: #369f7e solid 2px;
+  border: #369f7e solid 1px;
   transform: scale(1.15);
 }
 
@@ -464,7 +463,8 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+ 
   .header-project {
     width: 100%;
   }
@@ -476,18 +476,34 @@ main {
   }
 
   .projects {
-    padding-top: 50px;
+    padding-top: 30px;
+    font-size: 10px;
+    width: 320px;
+
+  }
+
+  .projects a {
+    width: 120px;
+    max-width: 200px;
+    min-width: 150px;
+    height: 150px;
+    margin: 0 0 10px 5px;
+    padding: 20px;
+  }
+
+  .projects img {
+    width: 100%;
+    height: 70px;
+  }
+  .projects figcaption {
+    font-size: 15px;
   }
 }
 
-@media (max-width: 300px) {
-  .projects a {
-    width: 20vw;
-    max-width: 1000px;
-    min-width: 250px;
-    height: 300px;
-    margin-bottom: 20px;
-    padding: 0;
+@media (max-width: 350px) {
+  
+  .projects {
+    width: 280px;
   }
 }
 
@@ -593,7 +609,6 @@ textarea {
   border: 1px solid rgb(242, 238, 238);
   padding: 10px 15px;
   margin-left: 15px;
-
 }
 
 input:focus {
@@ -693,14 +708,13 @@ input[type="submit"]:focus {
     flex-direction: column;
   }
 
-  form{
+  form {
     width: 95%;
   }
 
   #text-name {
     width: 100%;
   }
- 
 }
 
 @media (max-width: 300px) {
@@ -759,21 +773,18 @@ footer li {
   color: #256d56;
 }
 
-.link-red:hover{
+.link-red:hover {
   background-color: #256d56;
   border: white solid 1px;
-  
 }
 
-
 .link-red:hover i {
-  color:white;
+  color: white;
 }
 
 .link-red:focus {
   box-shadow: 0 0 40px white;
 }
-
 
 .internal-list a {
   color: white;

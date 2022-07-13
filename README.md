@@ -19,6 +19,6 @@ A través de él vas a poder saber cuáles son mis habilidades como desarrollado
 ---
 [👉 Hace click acá para visitarlo](https://portfolio-pink-six-83.vercel.app/)
 ---
-💻 con 💌 por Natalia 😘
+💻 con &#128154; por Natalia 😘
     
 
