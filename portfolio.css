@@ -462,7 +462,7 @@ main {
   border: #369f7e solid 1px;
 }
 
-.projects a:focus {
+.projects a:active {
   box-shadow: 0 0 10px #256d56;
 }
 
