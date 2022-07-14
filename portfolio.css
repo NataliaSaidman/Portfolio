@@ -80,7 +80,7 @@ main {
   width: 100%;
 }
 
-.hero {
+#heroID {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,14 +93,14 @@ main {
   padding-top: 100px;
 }
 
-.hero h2 {
+.presentation h2 {
   font-size: 30px;
   font-weight: 800;
   margin-top: -30px;
   margin-bottom: 5px;
 }
 
-.hero h1 {
+.presentation h1 {
   margin-top: -3px;
   margin-bottom: 5px;
   color: #8d3948;
@@ -108,7 +108,7 @@ main {
   font-weight: 900;
 }
 
-.hero p {
+.presentation p {
   color: black;
   margin-top: 10px;
   margin-bottom: 50px;
@@ -130,13 +130,13 @@ main {
   box-shadow: 0 0 10px #8d3948;
 }
 
-.hero figure {
+#heroID figure {
   width: 30vw;
   max-width: 1000px;
   min-width: 320px;
 }
 
-.hero img {
+#heroID img {
   width: 100%;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
@@ -147,7 +147,7 @@ main {
     display: none;
   }
 
-  .hero {
+  #heroID {
     flex-direction: column;
   }
 
@@ -162,14 +162,14 @@ main {
     width: 280px;
   }
 
-  .hero figure {
+  #heroID figure {
     width: 30vw;
     min-width: 250px;
     padding-top: 50px;
   }
 }
 
-.section-knowledge {
+#knowledgeID {
   background-color: #f6f7fb;
   padding: 100px 40px 130px;
   box-shadow: inset -20px 0px 40px -20px gray;
@@ -369,7 +369,8 @@ main {
     width: 220px;
   }
 }
-.section-project {
+
+#projectsID {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -448,11 +449,12 @@ main {
 }
 
 @media (max-width: 1000px) {
-  .section-proyect {
-    padding: 0px;
+
+  #projectsID {
     justify-content: center;
     align-items: center;
     width: 100%;
+   
   }
 
   .proyects {
@@ -470,11 +472,11 @@ main {
     font-size: 2.5rem;
   }
   .header-project p {
-    width: auto;
+    width: 90%;
   }
 
   .projects {
-    padding-top: 30px;
+    padding: 30px 0;
     font-size: 10px;
     width: 320px;
 
@@ -511,10 +513,11 @@ main {
 @media (max-width: 300px){
   .projects {
     width: 280px;
+    padding-top: 60px;
   }
 }
 
-.section-contact {
+#contactID {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #f6f7fb;
@@ -656,7 +659,7 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 1000px) {
-  .section-contact {
+  #contactID {
     background-color: white;
     flex-direction: column;
     height: auto;
@@ -789,8 +792,8 @@ footer li {
   color: white;
 }
 
-.link-red:focus {
-  box-shadow: 0 0 40px white;
+.link-red:active {
+  box-shadow: 0 0 10px white;
 }
 
 .internal-list a {
