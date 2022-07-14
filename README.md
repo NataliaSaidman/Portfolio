@@ -13,7 +13,8 @@ A través de él vas a poder saber cuales son mis habilidades como desarrollador
 - HTML
 - CSS
 
-[👉 Hace click acá para visitarlo](https://portfolio-pink-six-83.vercel.app/)
+## Vínculo 🌎
+[👉 Hace click acá para visitarlo](https://portfolio-pink-six-83.vercel.app/)            
 
 💻 con &#128154; por Natalia 😘
     
