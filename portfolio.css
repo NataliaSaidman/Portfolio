@@ -657,12 +657,12 @@ textarea {
 
 input:focus {
   box-shadow: 0 0 10px #256d56;
-  outline: rgb(242, 238, 238) ;
+  
 }
 
 textarea:focus {
   box-shadow: 0 0 10px #256d56;
-  outline: rgb(242, 238, 238) ;
+  
 }
 
 .name {
