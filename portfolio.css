@@ -18,6 +18,8 @@ a {
   text-decoration: none;
 }
 
+/* Comienza el encabezado con links de navegación */
+
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -70,6 +72,8 @@ header a:focus {
   box-shadow: 0 0 10px #256d56;
 }
 
+/* Comienza el main */
+
 main {
   background-color: white;
   width: 100%;
@@ -80,6 +84,8 @@ main {
   width: 100%;
 }
 
+/* Comienza la primera sección: hero */
+
 #heroID {
   display: flex;
   justify-content: center;
@@ -87,6 +93,8 @@ main {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
+/* Hero: presentación */
 
 .presentation {
   height: 300px;
@@ -130,6 +138,8 @@ main {
   box-shadow: 0 0 10px #8d3948;
 }
 
+/* Hero: imagen */
+
 #heroID figure {
   width: 30vw;
   max-width: 1000px;
@@ -142,6 +152,7 @@ main {
   mix-blend-mode: multiply;
 }
 
+/* Media Queries del hero. Incluye dos breakpoints*/
 @media (max-width: 1000px) {
   header nav {
     display: none;
@@ -169,6 +180,8 @@ main {
   }
 }
 
+/* Comienza la segunda sección: conocimientos */
+
 #knowledgeID {
   background-color: #f6f7fb;
   padding: 100px 40px 130px;
@@ -178,6 +191,8 @@ main {
   align-items: center;
   flex-direction: column;
 }
+
+/* Conocimientos: encabezado */
 
 .header-knowledge {
   display: flex;
@@ -202,6 +217,8 @@ main {
   color: black;
   width: 500px;
 }
+
+/* Conocimientos: grilla de habillidades (lenguajes) */
 
 .knowledge {
   display: flex;
@@ -243,6 +260,8 @@ main {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* Media Queries de la sección de conocimientos. Incluye cuatro breakpoints*/
 
 @media (min-width: 1350px) {
   .knowledge {
@@ -305,11 +324,9 @@ main {
   }
 }
 
-#lamp {
-  display: none;
-}
+/* Comienza la tercera sección: cita */
 
-.gif {
+.phrase-gif {
   background-color: #8d3948;
   padding: 50px;
   display: flex;
@@ -317,7 +334,7 @@ main {
   align-items: center;
 }
 
-.gif .phrase {
+.phrase-gif .quote {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
@@ -327,6 +344,12 @@ main {
   font-size: 20px;
   line-height: 1.4em;
 }
+
+#lamp {
+  display: none;
+}
+
+/* Gif que incluye la frase */
 
 .container {
   width: 20vw;
@@ -340,20 +363,22 @@ main {
   box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
 }
 
+/* Media Queries de la sección "frase". Incluye dos breakpoints*/
+
 @media (max-width: 1000px) {
-  .gif {
+  .phrase-gif {
     flex-direction: column;
   }
 
-  .gif .phrase {
+  .phrase-gif .quote {
     text-align: center;
   }
 
-  .gif .container img {
+  .phrase-gif .container img {
     display: none;
   }
 
-  .phrase p {
+  .quote p {
     margin-top: 20px;
   }
 
@@ -364,11 +389,13 @@ main {
 }
 
 @media (max-width: 300px) {
-  .gif .phrase {
+  .phrase-gif .quote {
     margin: 0;
     width: 220px;
   }
 }
+
+/* Comienza la sección de los proyectos*/
 
 #projectsID {
   display: flex;
@@ -377,6 +404,8 @@ main {
   align-items: center;
   padding: 100px 40px 130px;
 }
+
+/* Encabezado de la sección de proyectos */
 
 .header-project {
   display: flex;
@@ -400,6 +429,8 @@ main {
   color: black;
   width: 500px;
 }
+
+/* Grilla de proyectos */
 
 .projects {
   display: flex;
@@ -429,7 +460,6 @@ main {
 .projects a:hover {
   color: #256d56;
   border: #369f7e solid 1px;
-
 }
 
 .projects a:focus {
@@ -442,6 +472,8 @@ main {
   color: #256d56;
 }
 
+/* Media Queries de la sección de proyectos. Incluye cuatro breakpoints*/
+
 @media (min-width: 1400px) {
   .projects {
     width: 80%;
@@ -449,12 +481,10 @@ main {
 }
 
 @media (max-width: 1000px) {
-
   #projectsID {
     justify-content: center;
     align-items: center;
     width: 100%;
-   
   }
 
   .proyects {
@@ -464,7 +494,6 @@ main {
 }
 
 @media (max-width: 600px) {
- 
   .header-project {
     width: 100%;
   }
@@ -479,7 +508,6 @@ main {
     padding: 30px 0;
     font-size: 10px;
     width: 320px;
-
   }
 
   .projects a {
@@ -500,22 +528,23 @@ main {
 }
 
 @media (max-width: 360px) {
-  
   .projects {
     width: 320px;
   }
 
-  .projects a{
+  .projects a {
     margin: 0 0 3px 3px;
   }
 }
 
-@media (max-width: 300px){
+@media (max-width: 300px) {
   .projects {
     width: 280px;
     padding-top: 60px;
   }
 }
+
+/* Comienza sección de contacto */
 
 #contactID {
   padding-top: 200px;
@@ -527,6 +556,7 @@ main {
   box-shadow: inset -20px 0px 40px -20px gray;
 }
 
+/* Contenedor general de la sección */
 .box-contact {
   border: #f0f0f1 solid 2px;
   border-radius: 10px;
@@ -537,6 +567,7 @@ main {
   height: 700px;
 }
 
+/* Contenedor de cada subsección: "contactame" y "escribime" */
 .contact {
   width: 50%;
   padding: 40px;
@@ -552,11 +583,12 @@ main {
 }
 
 .contact p {
-  font-size: 18px;
   text-align: left;
   line-height: 1.4;
   margin: 20px 50px 16px 30px;
 }
+
+/* Subsección "contactame" links de contacto */
 
 .social-networks ul {
   display: flex;
@@ -608,6 +640,8 @@ main {
   color: white;
 }
 
+/* Subsección "escribime" formulario */
+
 form {
   margin-top: 20px;
 }
@@ -623,12 +657,12 @@ textarea {
 
 input:focus {
   box-shadow: 0 0 10px #256d56;
-  outline: none;
+  outline: rgb(242, 238, 238) ;
 }
 
 textarea:focus {
   box-shadow: 0 0 10px #256d56;
-  outline: none;
+  outline: rgb(242, 238, 238) ;
 }
 
 .name {
@@ -657,6 +691,8 @@ input[type="submit"]:hover {
 input[type="submit"]:focus {
   background-color: #256d56;
 }
+
+/* Media Queries de la sección contacto. Incluye tres breakpoints*/
 
 @media (max-width: 1000px) {
   #contactID {
@@ -748,6 +784,8 @@ input[type="submit"]:focus {
   }
 }
 
+/* Comienza el footer */
+
 footer {
   background-color: #256d56;
   color: white;
@@ -766,6 +804,28 @@ footer ul {
 footer li {
   padding: 20px;
 }
+
+/* Links de navegación */
+
+.internal-list a {
+  color: white;
+  font-size: 15px;
+}
+
+.internal-list a:hover {
+  color: #30a37f;
+}
+.internal-list a:focus {
+  background-color: #256d56;
+  box-shadow: 0 0 10px white;
+  color: white;
+}
+
+.internal-list {
+  margin-top: 20px;
+}
+
+/* links de contacto */
 
 .link-red {
   width: 40px;
@@ -796,31 +856,15 @@ footer li {
   box-shadow: 0 0 10px white;
 }
 
-.internal-list a {
-  color: white;
-  font-size: 15px;
-}
-
-.internal-list a:hover {
-  color: #30a37f;
-}
-.internal-list a:focus {
-  background-color: #256d56;
-  box-shadow: 0 0 10px white;
-  color: white;
+.external-list {
+  margin-top: -20px;
 }
 
 footer p {
   margin-bottom: 20px;
 }
 
-.internal-list {
-  margin-top: 20px;
-}
-
-.external-list {
-  margin-top: -20px;
-}
+/* Media Queries del footer. Incluye dos breakpoints*/
 
 @media (max-width: 500px) {
   footer .internal-list {
