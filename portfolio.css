@@ -119,7 +119,7 @@ main {
 .presentation p {
   color: black;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .button {
@@ -511,7 +511,7 @@ main {
   }
 
   .projects a {
-    width: 120px;
+    width: 150px;
     min-width: 150px;
     height: 150px;
     margin: 0 0 10px 10px;
@@ -692,7 +692,13 @@ input[type="submit"]:focus {
   background-color: #256d56;
 }
 
-/* Media Queries de la sección contacto. Incluye tres breakpoints*/
+/* Media Queries de la sección contacto. Incluye cuatro breakpoints*/
+
+@media (max-width: 1050px) {
+  .box-contact {
+    width: 95%;
+  }
+}
 
 @media (max-width: 1000px) {
   #contactID {
@@ -723,13 +729,20 @@ input[type="submit"]:focus {
     justify-content: space-between;
   }
 
-  #email {
+  .firstname, .lastname{
+    width: 50%;
+    height: 100px;
+  }
+
+  #text-name{
+    width: 97%;
+  }
+
+ #email, textarea{
     width: 100%;
   }
 
-  textarea {
-    width: 100%;
-  }
+
 }
 
 @media (max-width: 600px) {
@@ -750,13 +763,18 @@ input[type="submit"]:focus {
     padding-left: 0px;
   }
 
+  form {
+    width: 95%;
+  }
+
   .name {
     flex-direction: column;
   }
 
-  form {
-    width: 95%;
+  .firstname, .lastname{
+    width: 100%;
   }
+
 
   #text-name {
     width: 100%;
