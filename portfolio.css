@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-/* Comienza el encabezado con links de navegación */
+/* Comienza el header con links de navegación */
 
 header nav {
   display: flex;
@@ -71,6 +71,8 @@ header a:focus {
   background-color: #256d56;
   box-shadow: 0 0 10px #256d56;
 }
+
+/* Finaliza el Header */
 
 /* Comienza el main */
 
@@ -179,6 +181,7 @@ main {
     padding-top: 50px;
   }
 }
+/* Finaliza estilado del Hero */
 
 /* Comienza la segunda sección: conocimientos */
 
@@ -324,6 +327,8 @@ main {
   }
 }
 
+/* Finaliza estilado de la sección "Conocimientos" */
+
 /* Comienza la tercera sección: cita */
 
 .phrase-gif {
@@ -394,6 +399,7 @@ main {
     width: 220px;
   }
 }
+/* Finaliza estilado de la sección "Cita" */
 
 /* Comienza la sección de los proyectos*/
 
@@ -543,6 +549,7 @@ main {
     padding-top: 60px;
   }
 }
+/* Finaliza estilado de la sección "Proyectos" */
 
 /* Comienza sección de contacto */
 
@@ -657,12 +664,10 @@ textarea {
 
 input:focus {
   box-shadow: 0 0 10px #256d56;
-  
 }
 
 textarea:focus {
   box-shadow: 0 0 10px #256d56;
-  
 }
 
 .name {
@@ -729,20 +734,20 @@ input[type="submit"]:focus {
     justify-content: space-between;
   }
 
-  .firstname, .lastname{
+  .firstname,
+  .lastname {
     width: 50%;
     height: 100px;
   }
 
-  #text-name{
+  #text-name {
     width: 97%;
   }
 
- #email, textarea{
+  #email,
+  textarea {
     width: 100%;
   }
-
-
 }
 
 @media (max-width: 600px) {
@@ -771,10 +776,10 @@ input[type="submit"]:focus {
     flex-direction: column;
   }
 
-  .firstname, .lastname{
+  .firstname,
+  .lastname {
     width: 100%;
   }
-
 
   #text-name {
     width: 100%;
@@ -801,6 +806,8 @@ input[type="submit"]:focus {
     margin-left: 0;
   }
 }
+
+/* Finaliza estilado de la sección "Contacto" */
 
 /* Comienza el footer */
 
@@ -899,3 +906,4 @@ footer p {
     font-size: 14px;
   }
 }
+/* Finaliza estilado del Footer */

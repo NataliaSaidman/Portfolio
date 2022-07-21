@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="portfolio.css" />
-    <link rel="shortcut icon" href="imagenes/Favicon/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="imagenes/Favicon/favicon.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -17,20 +21,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Portfolio Natalia Saidman</title>
+    <title>Natalia Saidman</title>
   </head>
   <body>
-    <!-- Encabezado con links de navegación.-->
+    <!-- Comienzo Header.-->
     <header>
       <nav>
+        <!-- Menú de navegación -->
         <ul>
           <li><a href="#heroID">HOLA</a></li>
           <li><a href="#knowledgeID">CONOCIMIENTOS</a></li>
           <li><a href="#projectsID">PROYECTOS</a></li>
           <li><a href="#contactID" id="contact">CONTACTO</a></li>
         </ul>
+        <!-- Fin menú de navegación -->
       </nav>
     </header>
+    <!-- Finaliza Header -->
     <!-- Comienza el main -->
     <main>
       <!-- Primera sección: hero. Inlcuye presentación e imagen -->
@@ -38,13 +45,21 @@
         <div class="presentation">
           <h2>¡Hola! Soy</h2>
           <h1>Natalia Saidman</h1>
-          <p>Desarrolladora, Lic. en Nutrición y fanática de los juegos de mesa</p>
-          <a href="#projectsID" class="button">LO QUE HAGO</a>
+          <p>
+            Desarrolladora, Lic. en Nutrición y fanática de los juegos de mesa
+          </p>
+          <a
+            href="#projectsID"
+            aria-label="Leer más sobre los proyectos"
+            class="button"
+            >LO QUE HAGO</a
+          >
         </div>
         <figure>
           <img src="imagenes/hero.jpeg" alt="mujer programando" />
         </figure>
       </section>
+      <!-- Finaliza sección Hero -->
 
       <!-- Segunda sección: conocimientos. Inlcuye encabezado e iconos de los lenguajes. -->
 
@@ -83,6 +98,7 @@
           </div>
         </div>
       </section>
+      <!-- Finaliza segunda sección "Conocimientos" -->
 
       <!-- Tercera sección: cita y gif -->
 
@@ -90,8 +106,10 @@
         <div class="quote">
           <div id="lamp">🔥</div>
           <blockquote>
-            <p>"He aprendido a arriesgarme a hacer cosas nuevas. El crecimiento y
-            la comodidad no pueden coexistir"</p>
+            <p>
+              "He aprendido a arriesgarme a hacer cosas nuevas. El crecimiento y
+              la comodidad no pueden coexistir"
+            </p>
           </blockquote>
           <br />
           <cite>Virginia Rometti</cite>
@@ -100,6 +118,7 @@
           <img src="imagenes/cita.gif" alt="gif mujer con computadora" />
         </div>
       </section>
+      <!-- Finaliza tercera sección "Cita" -->
 
       <!-- Cuarta sección: Proyectos. Incluye un encabezado y la grilla de proyectos -->
 
@@ -112,6 +131,7 @@
             responsabilidad y en forma colaborativa.
           </p>
         </div>
+        <!-- Grilla de proyectos -->
         <div class="projects">
           <a href="#" target="_blank">
             <img
@@ -120,39 +140,63 @@
             />
             <figcaption>Portfolio</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto generador de memes"
+          >
             <img
               src="imagenes/imagenes proyectos/memes.svg"
               alt="mujeres con guitarra y cámara"
             />
             <figcaption>Generador de memes</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto Match 3"
+          >
             <img src="imagenes/imagenes proyectos/match3.svg" alt="joystick" />
             <figcaption>Match 3</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto controlador de gastos"
+          >
             <img
               src="imagenes/imagenes proyectos/controlador de gastos.svg"
               alt="mujer estadisticas"
             />
             <figcaption>Controlador de gastos</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto Administrador de reuniones"
+          >
             <img
               src="imagenes/imagenes proyectos/administradora de reuniones.svg"
               alt="mujer con reloj"
             />
             <figcaption>Administrador de reuniones</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto todo app"
+          >
             <img
               src="imagenes/imagenes proyectos/appsvg.svg"
               alt="celular app"
             />
             <figcaption>Todo app</figcaption>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="leer más sobre proyecto buscador de películas"
+          >
             <img
               src="imagenes/imagenes proyectos/movie.svg"
               alt="mujeres mirando películas"
@@ -160,7 +204,9 @@
             <figcaption>Buscador de películas</figcaption>
           </a>
         </div>
+        <!-- Fin grilla de proyectos -->
       </section>
+      <!-- Finaliza cuarta sección: "Proyectos" -->
 
       <!-- Quinta sección: contacto. links de contacto y formulario -->
 
@@ -173,15 +219,17 @@
               través de mis redes sociales.
             </p>
             <div class="social-networks">
-              <ul>
+              <ul aria-label="links de redes sociales">
                 <div>
                   <li>
                     <a
                       href="https://twitter.com/saidman_natalia"
                       target="_blank"
                       class="social-link"
+                      aria-label="Twitter"
                     >
-                      <i class="fa-brands fa-twitter"></i>@saidman_natalia</a
+                      <i aria-hidden="true" class="fa-brands fa-twitter"></i
+                      >@saidman_natalia</a
                     >
                   </li>
                   <li>
@@ -189,7 +237,9 @@
                       href="https://github.com/NataliaSaidman"
                       target="_blank"
                       class="social-link"
-                      ><i class="fa-brands fa-github-alt"></i>NataliaSaidman</a
+                      aria-label="Github"
+                      ><i aria-hidden="true" class="fa-brands fa-github-alt"></i
+                      >NataliaSaidman</a
                     >
                   </li>
                 </div>
@@ -199,8 +249,10 @@
                       href="https://www.linkedin.com/in/natalia-saidman-29879a242/"
                       target="_blank"
                       class="social-link"
+                      aria-label="Linkedin"
                     >
-                      <i class="fa-brands fa-linkedin-in"></i>Natalia Saidman</a
+                      <i aria-hidden="true" class="fa-brands fa-linkedin-in"></i
+                      >Natalia Saidman</a
                     >
                   </li>
                   <li>
@@ -208,7 +260,8 @@
                       href="mailto:licnataliasaidman@gmail.com"
                       target="_blank"
                       class="social-link"
-                      ><i class="fa-solid fa-envelope"></i
+                      aria-label="Email"
+                      ><i aria-hidden="true" class="fa-solid fa-envelope"></i
                       >licnataliasaidman@gmail.com</a
                     >
                   </li>
@@ -227,6 +280,7 @@
                     name="nombre"
                     id="text-name"
                     placeholder="p. ej.: Natalia"
+                    aria-label="Nombre"
                   />
                 </div>
                 <div class="lastname">
@@ -236,6 +290,7 @@
                     name="apellido"
                     id="text-name"
                     placeholder="p. ej.: Saidman"
+                    aria-label="Apellido"
                   />
                 </div>
               </div>
@@ -246,6 +301,7 @@
                 id="email"
                 required
                 placeholder="p. ej.: licnataliasaidman@gmail.com"
+                aria-label="Email"
               />
 
               <p>Mensaje <span>*</span></p>
@@ -253,6 +309,7 @@
                 cols="50"
                 rows="10"
                 placeholder="Escriba mensaje aquí"
+                aria-label="Mensaje"
               ></textarea>
               <p>
                 <input type="submit" value="Enviar" />
@@ -261,9 +318,11 @@
           </div>
         </div>
       </section>
+      <!-- Finaliza quinta sección "Contacto" -->
     </main>
+    <!-- Finaliza el main -->
 
-    <!-- Footer: links de navegación y de contacto -->
+    <!-- Inicia Footer: links de navegación y de contacto -->
     <footer>
       <div class="internal-list">
         <nav>
@@ -279,14 +338,20 @@
         <ul>
           <li>
             <div class="link-red">
-              <a href="https://twitter.com/saidman_natalia" target="_blank"
+              <a
+                href="https://twitter.com/saidman_natalia"
+                target="_blank"
+                aria-label="Twitter"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </div>
           </li>
           <li>
             <div class="link-red">
-              <a href="https://github.com/NataliaSaidman" target="_blank"
+              <a
+                href="https://github.com/NataliaSaidman"
+                target="_blank"
+                aria-label="Github"
                 ><i class="fa-brands fa-github-alt"></i
               ></a>
             </div>
@@ -296,13 +361,17 @@
               <a
                 href="https://www.linkedin.com/in/natalia-saidman-29879a242/"
                 target="_blank"
+                aria-label="Linkedin"
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
             </div>
           </li>
           <li>
             <div class="link-red">
-              <a href="mailto:licnataliasaidman@gmail.com" target="_blank"
+              <a
+                href="mailto:licnataliasaidman@gmail.com"
+                target="_blank"
+                aria-label="Email"
                 ><i class="fa-solid fa-envelope"></i
               ></a>
             </div>
@@ -311,5 +380,6 @@
       </div>
       <p>Hecho con &#128154; por Natalia Saidman</p>
     </footer>
+    <!-- Finaliza footer -->
   </body>
 </html>
