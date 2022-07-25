@@ -48,7 +48,7 @@ header a {
 }
 
 header a:hover {
-  color: #a4a476;
+  color: #256d56;
 }
 
 header a:focus {
@@ -56,18 +56,19 @@ header a:focus {
   box-shadow: 0 0 10px #a4a476;
 }
 
-#contact {
+#contact-button {
   background-color: #256d56;
   color: white;
   border-radius: 50px;
   padding: 10px 30px;
 }
 
-#contact:hover {
-  background-color: #30a37f;
+#contact-button:hover {
+  background-color: #37a884;
+  color: black;
 }
 
-#contact:focus {
+#contact-button:focus {
   background-color: #256d56;
   box-shadow: 0 0 10px #256d56;
 }
@@ -88,7 +89,7 @@ main {
 
 /* Comienza la primera sección: hero */
 
-#heroID {
+#hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,6 +134,7 @@ main {
 
 .button:hover {
   background-color: #d35b71;
+  color: black;
 }
 
 .button:focus {
@@ -142,13 +144,13 @@ main {
 
 /* Hero: imagen */
 
-#heroID figure {
+#hero figure {
   width: 30vw;
   max-width: 1000px;
   min-width: 320px;
 }
 
-#heroID img {
+#hero img {
   width: 100%;
   filter: brightness(1.1);
   mix-blend-mode: multiply;
@@ -160,7 +162,7 @@ main {
     display: none;
   }
 
-  #heroID {
+  #hero {
     flex-direction: column;
   }
 
@@ -175,7 +177,7 @@ main {
     width: 280px;
   }
 
-  #heroID figure {
+  #hero figure {
     width: 30vw;
     min-width: 250px;
     padding-top: 50px;
@@ -185,7 +187,7 @@ main {
 
 /* Comienza la segunda sección: conocimientos */
 
-#knowledgeID {
+#knowledge {
   background-color: #f6f7fb;
   padding: 100px 40px 130px;
   box-shadow: inset -20px 0px 40px -20px gray;
@@ -223,7 +225,7 @@ main {
 
 /* Conocimientos: grilla de habillidades (lenguajes) */
 
-.knowledge {
+.skills-grid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,13 +269,13 @@ main {
 /* Media Queries de la sección de conocimientos. Incluye cuatro breakpoints*/
 
 @media (min-width: 1350px) {
-  .knowledge {
+  .skills-grid {
     width: 80%;
   }
 }
 
 @media (max-width: 1000px) {
-  .knowledge {
+  .skills-grid {
     width: 100%;
     padding: 0;
   }
@@ -290,7 +292,7 @@ main {
     width: auto;
   }
 
-  .knowledge {
+  .skills-grid {
     margin-top: 50px;
   }
 
@@ -313,7 +315,7 @@ main {
     font-size: 2rem;
   }
 
-  .knowledge {
+  .skills-grid {
     width: 280px;
   }
 
@@ -403,7 +405,7 @@ main {
 
 /* Comienza la sección de los proyectos*/
 
-#projectsID {
+#projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -438,7 +440,7 @@ main {
 
 /* Grilla de proyectos */
 
-.projects {
+.projects-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -446,7 +448,7 @@ main {
   font-size: 20px;
 }
 
-.projects a {
+.projects-grid a {
   border-radius: 5px;
   border: gainsboro solid 1px;
   background-color: white;
@@ -458,21 +460,21 @@ main {
   padding: 20px;
 }
 
-.projects img {
+.projects-grid img {
   width: 100%;
   height: 200px;
 }
 
-.projects a:hover {
+.projects-grid a:hover {
   color: #256d56;
   border: #369f7e solid 1px;
 }
 
-.projects a:active {
+.projects-grid a:active {
   box-shadow: 0 0 10px #256d56;
 }
 
-.projects figcaption {
+.projects-grid figcaption {
   padding-top: 10px;
   text-align: center;
   color: #256d56;
@@ -481,19 +483,19 @@ main {
 /* Media Queries de la sección de proyectos. Incluye cuatro breakpoints*/
 
 @media (min-width: 1400px) {
-  .projects {
+  .projects-grid {
     width: 80%;
   }
 }
 
 @media (max-width: 1000px) {
-  #projectsID {
+  #projects {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
 
-  .proyects {
+  .proyects-grid {
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -510,13 +512,13 @@ main {
     width: 90%;
   }
 
-  .projects {
+  .projects-grid {
     padding: 30px 0;
     font-size: 10px;
     width: 320px;
   }
 
-  .projects a {
+  .projects-grid a {
     width: 150px;
     min-width: 150px;
     height: 150px;
@@ -524,27 +526,27 @@ main {
     padding: 20px;
   }
 
-  .projects img {
+  .projects-grid img {
     width: 100%;
     height: 70px;
   }
-  .projects figcaption {
+  .projects-grid figcaption {
     font-size: 15px;
   }
 }
 
 @media (max-width: 360px) {
-  .projects {
+  .projects-grid {
     width: 320px;
   }
 
-  .projects a {
+  .projects-grid a {
     margin: 0 0 3px 3px;
   }
 }
 
 @media (max-width: 300px) {
-  .projects {
+  .projects-grid {
     width: 280px;
     padding-top: 60px;
   }
@@ -553,7 +555,7 @@ main {
 
 /* Comienza sección de contacto */
 
-#contactID {
+#contact {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #f6f7fb;
@@ -687,10 +689,12 @@ input[type="submit"] {
   font-size: 16px;
   box-shadow: 0 0 10px #256d56;
   margin-left: -15px;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #369e7d;
+  background-color: #37a884;
+  color: black;
 }
 
 input[type="submit"]:focus {
@@ -706,7 +710,7 @@ input[type="submit"]:focus {
 }
 
 @media (max-width: 1000px) {
-  #contactID {
+  #contact {
     background-color: white;
     flex-direction: column;
     height: auto;
@@ -837,9 +841,6 @@ footer li {
   font-size: 15px;
 }
 
-.internal-list a:hover {
-  color: #30a37f;
-}
 .internal-list a:focus {
   background-color: #256d56;
   box-shadow: 0 0 10px white;
